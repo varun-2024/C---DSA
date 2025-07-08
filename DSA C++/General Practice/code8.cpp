@@ -10,17 +10,13 @@ int main(){
     cin>>num;
     cout<<"Enter o for odd or e for even:" <<endl;
     cin>>oddeven;
-    
     while(num>0) {
-        
         digit = num % 10;
-
         if (oddeven == 'o'){
             if(digit%2!=0){
                 sum += digit;
             }
         }
-
         if (oddeven == 'e'){
             if(digit%2==0){
                 sum += digit;
