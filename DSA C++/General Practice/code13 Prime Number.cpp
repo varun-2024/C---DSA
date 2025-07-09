@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cmath>
 using namespace std;
 
 int main(){
@@ -6,7 +7,14 @@ int main(){
     bool isPrime = true;
     cout<<"Enter Number:"<<endl;
     cin>>num;
-    for(int i=2; i<num-1; i++){
+    /* for(int i=2; i<num-1; i++){
+        if(num % i == 0 ){
+            isPrime=false;
+            break;
+        }
+    } */
+   //More Efficient
+    for(int i=2; i<sqrt(num); i++){
         if(num % i == 0 ){
             isPrime=false;
             break;
