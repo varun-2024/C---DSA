@@ -12,13 +12,13 @@ int main() {
         return 0;
     }
     int a= 0, b=1;
-    cout<< a << " , "<< b << " , ";
+    cout<< a << "  "<< b << "  ";
     while(true){
         int next = a + b;
         if (next > num){
             break;
         }
-        cout << next << " , ";
+        cout << next << "  ";
         a = b;
         b = next;
     }
