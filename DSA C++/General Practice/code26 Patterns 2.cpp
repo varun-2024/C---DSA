@@ -1,12 +1,10 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int rows =0 , cols = 0;
+    int n =0;
     cout<<"Enter no. of Rows:"<<endl;
-    cin>> rows;
-    /* cout<< "Enter No. of Colums"<< endl;
-    cin>> cols; */
-    for(int i=1; i<=rows; i++){
+    cin>> n;
+    for(int i=1; i<=n; i++){
         for(int j=1; j<=i; j++){
             cout<<" * ";
         }
