@@ -2,6 +2,7 @@
 using namespace std;
 int main(){
     int n=0;
+    const int r =7;
     cout<< " Enter the number of Rows: "<< endl;
     cin >> n;
     for (int i = 1; i<=n; i++){
