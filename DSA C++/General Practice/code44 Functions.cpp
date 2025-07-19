@@ -8,7 +8,7 @@ int addition(int a=3, int b=2);
 
 int main(){
     printHello();
-    cout<<addition(5,10);
+    cout<<addition(5);
     return 0;
 }
 
