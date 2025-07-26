@@ -1,7 +1,7 @@
 #include<iostream>
 #include<climits>
 using namespace std;
-void trap(int *heights, int n){
+int trap(int *heights, int n){
     int leftmax[20000];
     leftmax[0] = heights[0];
     cout << leftmax[0] << " ";
@@ -26,11 +26,11 @@ void trap(int *heights, int n){
             watertrap += currwater;
         }
     }
-    cout << endl << "Water Trap = " << watertrap;
+   return watertrap;
 }
 int main(){
     int heights[] = {4, 2, 0, 6, 3, 2, 5};
     int n = sizeof(heights) / sizeof(int);
-    trap(heights, n);
+     cout << endl << "Water Trap = " << trap(heights, n);
     return 0;
 }
